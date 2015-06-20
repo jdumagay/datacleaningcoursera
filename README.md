@@ -73,7 +73,8 @@ The result of this summarization is stored in another dataframe ("tidy").
 
 8. Write out results to file
 Appropriate column names are assigned to the "tidy" data frame. This data frame is
-then saved to a file (named "tidy-HAR-Data.txt") using write.table.
+then saved to a file (named "tidy-HAR-Data.txt") using write.table. The file will
+be in the same folder as the script.
 
 9. Clean up
 The script then cleans up unsused data frames in memory. It does leave a the data
@@ -84,7 +85,7 @@ file.
 The tidy-HAR-Data.txt is a sample output of the run_analysis.R script. To read 
 the data into R, use read.table with the header option set to true.  
 ```
-tidyData <- read.table("/.tidy-HAR-Data.txt", header = TRUE)
+tidyData <- read.table("./path/to/tidy-HAR-Data.txt", header = TRUE)
 ```
 
 ### Codebook.md
