@@ -1,13 +1,13 @@
- This code book describes the resulting "tidy" data set from processing of the 
- HAR data with the run_analysis.R script. ("tidy" data = the data set that 
- results from running the run_analysis.R script).
+This code book describes the resulting "tidy" data set from processing of the 
+HAR data with the run_analysis.R script. ("tidy" data = the data set that 
+results from running the run_analysis.R script).
 
- The tidy data set has 68 variables (each discussed below) with 180 observations
- derived from 30 participants doing 6 different activities (30 x 6 = 180).
+The tidy data set has 68 variables (each discussed below) with 180 observations
+derived from 30 participants doing 6 different activities (30 x 6 = 180).
 
-[1] "subject"
-        * Identifier of the subject who carried out the experiment
-        * Extracted from the subject_(train|test).txt files in the original HAR data
+[1] "subject"  
+  * Identifier of the subject who carried out the experiment
+  * Extracted from the subject_(train|test).txt files in the original HAR data
         * Data Type: Numeric (but conceptually used as a factor to group by subject)
         * Range: 1 to 30
 
